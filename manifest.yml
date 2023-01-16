@@ -1,0 +1,8 @@
+---
+applications:
+
+- name: capdemo1-dev
+  host: approuter_saas_app
+  path: approuter
+  buildpack: nodejs_buildpack
+  memory: 256M
