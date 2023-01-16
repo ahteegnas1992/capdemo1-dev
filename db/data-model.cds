@@ -1,5 +1,5 @@
 namespace my.bookshop;
-//test
+//testr
 entity Books {
   key ID : Integer;
   title  : String;
