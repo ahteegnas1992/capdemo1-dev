@@ -16,8 +16,9 @@ modules:
     path: gen/srv
     parameters:
       buildpack: nodejs_buildpack
-    memory: 256M
-    instances: 1
+      memory: 256M
+      app-name: capappnameupdated
+      instances: 1
     build-parameters:
       builder: npm-ci
     provides:
