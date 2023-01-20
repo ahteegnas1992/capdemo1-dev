@@ -17,6 +17,13 @@ modules:
       memory: 256M
       app-name: capappnameupdated
       instances: 1
+    parameters-metadata:  
+     memory:  
+       optional: true  
+       overwritable: true  
+     app-name:
+        optional: true  
+        overwritable: true
     build-parameters:
       builder: npm-ci
     provides:
