@@ -11,11 +11,13 @@ build-parameters:
       commands:
         - npx -p @sap/cds-dk cds build --production
 modules:
-  - name: cicd-srv
+  - name: test
     type: nodejs
     path: gen/srv
     parameters:
       buildpack: nodejs_buildpack
+    memory: 256M
+    instances: 1
     build-parameters:
       builder: npm-ci
     provides:
