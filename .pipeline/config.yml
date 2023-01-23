@@ -33,9 +33,9 @@ steps:
       space: 'dev1'
 
 ### Stage-specific configuration
-stages:
-  'Confirm':
-    manualConfirmation: false
+#stages:
+  #'Confirm':
+   # manualConfirmation: false
 
 #  Integration:
 #    credentials:
