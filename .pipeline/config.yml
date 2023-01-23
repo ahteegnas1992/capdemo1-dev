@@ -21,6 +21,13 @@ steps:
 
   artifactPrepareVersion:
     versioningType: cloud_noTag
+    
+  cloudFoundryDeploy:
+    cloudFoundry:
+      credentialsId: 'deploy-cf'
+      apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com' # for example, "https://api.cf.eu10.hana.ondemand.com"
+      org: '7b45cd19trial'
+      space: 'dev1'
 
 ### Stage-specific configuration
 stages:
