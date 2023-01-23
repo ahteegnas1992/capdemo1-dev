@@ -11,8 +11,8 @@
 
 
 ### General project setup
-general:
-  inferBuildTool: true
+#general:
+#  inferBuildTool: true
 
 ### Step-specific configuration
 steps:
@@ -21,7 +21,8 @@ steps:
 
   artifactPrepareVersion:
     versioningType: cloud_noTag
-  
+  mtaBuild:
+    buildTarget: 'CF'
   cloudFoundryDeploy:
     cloudFoundry:
       credentialsId: 'deploy-cf'
