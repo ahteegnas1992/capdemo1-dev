@@ -21,8 +21,10 @@ steps:
 
   artifactPrepareVersion:
     versioningType: cloud_noTag
+    
   mtaBuild:
     buildTarget: 'CF'
+    
   cloudFoundryDeploy:
     cloudFoundry:
       credentialsId: 'deploy-cf'
