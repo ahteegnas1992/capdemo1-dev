@@ -18,7 +18,13 @@ node(){
 
   stage('Build')   {
       //mtaBuild script:this
-    sh "mbt build --mtar cicd.mtar --platform CF --source ./ --target /var/jenkins_home/workspace/Cargill/cap_deployment"
+     agent {
+                docker { image 'node:16.13.1-alpine' }
+            }
+    steps{
+      mtaBuild script:this
+    }
+   // sh "mbt build --mtar cicd.mtar --platform CF --source ./ --target /var/jenkins_home/workspace/Cargill/cap_deployment"
     
   }
 
